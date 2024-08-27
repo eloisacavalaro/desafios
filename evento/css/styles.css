@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0e0d0d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    margin-top: 13px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#sobre{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #201f1f;
+    
+}
+
+#sobre h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sobre-evento p {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/DES-min-scaled.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -25px;
+    height: 500px;
+    width: 2000px;
+}
+#cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #201f1f;
+    height: 900px;
+}
+#cadastro h2{
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+    /* Ajuste conforme necessário */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* campos do formulário */
+label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"],
+fieldset {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #626464;
+}
+
+/* contato */
+#contato {
+    text-align: center;
+    padding: 20px;
+    background-color: #201f1f;
+    color: #fff;
+    height: 150px;
+}

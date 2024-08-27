@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./css/reset.css"/>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <title>Cadastro para o Tech Conference 2024</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Teach Coference 2024</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre o Evento</a></li>
+                        <li><a href="#cadastro">Cadastro</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <section id="sobre">
+            <h2>Sobre o Evento</h2>
+            <br>
+            <div class="sobre-evento">
+            <p>O Tech Conference 2024 é o maior evento de tecnologia
+            do ano, reunindo <br>especialistas de todo o mundo para discutir inovações e
+            tendências.</p>
+            </div>
+        </section>
+
+        <section id="cadastro">
+            <h2>Formulário de Inscrição</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+
+                <fieldset>
+                    <legend>Seleção de Workshops:</legend>
+                    <input type="checkbox" id="workshop1" name="workshop" value="Workshop 1">
+                    <label for="workshop1">Workshop 1</label><br>
+                    <input type="checkbox" id="workshop2" name="workshop" value="Workshop 2">
+                    <label for="workshop2">Workshop 2</label><br>
+                    <input type="checkbox" id="workshop3" name="workshop" value="Workshop 3">
+                    <label for="workshop3">Workshop 3</label><br>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Receber Newsletter:</legend>
+                        <input type="radio" id="sim" name="newsletter" value="Sim">
+                        <label for="sim">Sim</label><br>
+                        <input type="radio" id="nao" name="newsletter" value="Não">
+                        <label for="nao">Não</label><br>
+                    </fieldset>
+                    
+                    <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco pelo email <a
+                href="mailto:techconference2024@exemplo.com">techconference2024@exemplo.com</a>.</p>
+        </section>
+    </body>
+</html>
