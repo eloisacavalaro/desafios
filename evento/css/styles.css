@@ -10,7 +10,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    height: 80px;
+    height: 100px;
 }
 
 header h1 {
@@ -82,14 +82,12 @@ form {
     gap: 16px;
     width: 100%;
     max-width: 600px;
-    /* Ajuste conforme necessário */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
-/* campos do formulário */
 label {
     font-size: 14px;
     line-height: 24px;
@@ -123,11 +121,13 @@ button:hover {
     background-color: #626464;
 }
 
-/* contato */
 #contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: #201f1f;
+    background-color: #000000;
     color: #fff;
-    height: 150px;
+    height: 60px;
 }
