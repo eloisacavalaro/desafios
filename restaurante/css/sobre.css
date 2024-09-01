@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Flama Light', sans-serif;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1b1a1a;
+}
+
+.content {
+    margin-left: 20px;
+    padding: 16px;
+}
+
+.sidebar-active {
+    left: 0;
+}
+.logo{
+    width: 80px;
+    margin-top: 15px;
+}
+.header {
+    background-image: url("../imagens/istockphoto-1743632673-612x612.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+}
+.header h1 {
+    margin-bottom: 380px;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+.historia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #fcf7f8a8;
+}
+.tudo{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.historia h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.historia h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.historia h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.conheca {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    text-indent: 8px;
+    height: 1200px;
+}
+.conheca h1{
+    margin-bottom: 200px;
+}
+
+.chefs {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 96px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.chefs p {
+    list-style: none;
+    color: #000000;
+    font-weight: bold;
+    background-color: #fcf7f8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.card header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: #fcf7f8a8;
+}
+
+.card h3 {
+    width: 100%;
+    color: #000000;
+    background-color: #fcf7f8a8;
+    font-size: 25px;
+}
+
+.fotos img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -100px;
+    
+    
+}
+.fotos1{
+    background-image: url("../imagens2/270ff5467b58f6fe7dcc6b9c5ed0573b0509a899_high.webp");
+    
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -100px;
+}
+
+
+.citacao h4 {
+    background-color: #ecebeb;
+    padding: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcf7f8a8;
+}
+
