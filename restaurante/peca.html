@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/peca.css">
+        <link href="https://fonts.cdnfonts.com/css/flama-light" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <title>Restaurante Sabor Brasileiro- Peça Online</title>
+    </head>
+    <body>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        
+        <nav id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#peca">Peça Online</a></li>
+            </ul>
+        </nav>
+
+        <div >
+            <header class="header">
+                <img src="./imagens/ilhas-salomao.png" alt="#" class="logo">
+                <h1 class="animate__animated animate__fadeInUp">Peça Online</h1>
+                
+            </header>
+        </div>
+<section id="peca">
+    <div class="container card" >
+        <div class="card2"> 
+            <form class="form" action="/enviar-pedido" method="post">
+                <h1 id="heading">Formulário de Pedido</h1>
+
+                <div class="field" data-aos="fade-up">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="input-field" id="nome" name="nome" required>
+                </div>
+
+                <div class="field" data-aos="fade-up">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" class="input-field" id="endereco" name="endereco" required>
+                </div>
+
+                <div class="field" data-aos="fade-up">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="input-field" id="telefone" name="telefone" required>
+                </div>
+
+                <div id="pratos-container" data-aos="fade-up">
+                    <div class="field prato-item">
+                        <label for="pratos-1">Seleção de Pratos:</label>
+                        <select class="input-field pratos" name="pratos[]" required>
+                            <option value="" disabled selected>Selecione um prato</option>
+                            <optgroup label="Pratos">
+                                <option value="feijoada" data-preco="15">Feijoada - R$15,00</option>
+                                <option value="arroz" data-preco="17">Arroz Carreteiro - R$17,00</option>
+                                <option value="moqueca" data-preco="28">Moqueca de Peixe - R$28,00</option>
+                                <option value="tacaca" data-preco="14">Tacacá - R$14,00</option>
+                                <option value="frango" data-preco="22">Frango com Quiabo - R$22,00</option>
+                            </optgroup>
+                            <optgroup label="Salgados">
+                                <option value="chipa" data-preco="10">Porção de Chipa - R$10,00</option>
+                                <option value="pastel" data-preco="10">Pastel de Carne - R$10,00</option>
+                                <option value="coxinha" data-preco="8">Coxinha - R$8,00</option>
+                                <option value="empadao" data-preco="12">Fatia de Empadão - R$12,00</option>
+                                <option value="pao" data-preco="3">Pão de Queijo - R$3,00</option>
+                                <option value="torta" data-preco="7">Fatia de Torta Salgada - R$7,50</option>
+                            </optgroup>
+                            <optgroup label="Sobremesas">
+                                <option value="rolo" data-preco="10">Fatia de Bolo de Rolo - R$10,00</option>
+                                <option value="pudim" data-preco="5">Fatia de Pudim - R$5,00</option>
+                                <option value="fuba" data-preco="4">Fatia de Bolo de Fubá - R$4,00</option>
+                                <option value="bolinho" data-preco="10">Porção de Bolinho de Chuva - R$10,00</option>
+                                <option value="pave" data-preco="12">Fatia de Pavê - R$12,00</option>
+                                <option value="milkshake" data-preco="24">Copo 700ml de Milkshake - R$24,00</option>
+                            </optgroup>
+                            <optgroup label="Bebidas">
+                                <option value="agua" data-preco="6">Garrafa 1,5L de Água - R$6,00</option>
+                                <option value="cocacola" data-preco="12">Garrafa 2,0L de Coca-Cola Zero - R$12,00
+                                </option>
+                                <option value="caldo" data-preco="6.50">Copo 500ml de Caldo de Cana - R$6,50</option>
+                                <option value="sprite" data-preco="10">Garrafa 2,0L de Sprite - R$10,00</option>
+                                <option value="fanta" data-preco="11">Garrafa 2,0L de Fanta Uva - R$11,00</option>
+                                <option value="limonada" data-preco="8">Jarra de Limonada Suiça - R$8,00</option>
+                            </optgroup>
+                        </select>
+                        <span class="remove-btn" onclick="removePrato(this)">X</span>
+                    </div>
+                </div>
+
+                <button class="button1" type="button" onclick="addPrato()">Adicionar mais pratos</button>
+
+                <div class="form-group" data-aos="fade-up">
+                    <label>Método de Pagamento:</label>
+                    <div class="field">
+                        <input type="radio" id="cartao" name="pagamento" value="cartao" required>
+                        <label for="cartao">Cartão de Crédito</label>
+                    </div>
+                    <div class="field" data-aos="fade-up">
+                        <input type="radio" id="pix" name="pagamento" value="pix">
+                        <label for="pix">Via Pix</label>
+                    </div>
+                    <div class="field" data-aos="fade-up">
+                        <input type="radio" id="transferencia" name="pagamento" value="transferencia">
+                        <label for="transferencia">Transferência Bancária</label>
+                    </div>
+                </div>
+
+                <div class="field" data-aos="fade-up">
+                    <label for="instrucoes">Instruções Especiais:</label>
+                    <textarea class="input-field" id="instrucoes" name="instrucoes" rows="4"></textarea>
+                </div>
+
+                <div class="total-group field" data-aos="fade-up">
+                    <label>Total:</label>
+                    <span id="total">R$0,00</span>
+                </div>
+
+                <button class="button2" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+        <footer class="footer" data-aos="fade-up">
+            <p>© Sabor Brasileiro. Todos os direitos reservados.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="script.js"> </script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+
+</html>

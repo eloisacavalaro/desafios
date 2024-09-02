@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Flama Light', sans-serif;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1b1a1a;
+}
+
+.content {
+    margin-left: 20px;
+    padding: 16px;
+}
+
+.sidebar-active {
+    left: 0;
+}
+
+.logo {
+    width: 80px;
+    margin-top: 15px;
+
+}
+
+.header {
+    background-image: url("../imagens/istockphoto-1743632673-612x612.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+}
+
+.header h1 {
+    margin-bottom: 380px;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+.header p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#peca{
+    height: 1000px;
+}
+.form {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    height: 800px;
+    
+   
+   
+}
+
+#heading {
+    text-align: center;
+    margin: 0;
+    
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    background-color: #171717;
+    color: white;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: rgb(0, 0, 0);
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+.button1 {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    transition: .4s ease-in-out;
+    background-image: linear-gradient(163deg, #dedfde 0%, #d5d4d6 100%);
+    color: rgb(0, 0, 0);
+}
+
+.button1:hover {
+    background-image: linear-gradient(163deg, #000000 0%, #ffffff 100%);
+    color: rgb(0, 0, 0);
+}
+
+.button2 {
+    padding: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    border-radius: 5px;
+    border: none;
+    transition: .4s ease-in-out;
+    background-image: linear-gradient(163deg, #000000 0%, #000000 100%);
+    color: rgb(255, 255, 255);
+}
+
+.button2:hover {
+    background-image: linear-gradient(163deg, #fcfcfc 0%, #a1a0a3 100%);
+    color: rgb(0, 0, 0);
+}
+
+.button3 {
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    transition: .4s ease-in-out;
+    background-image: linear-gradient(163deg, #000000 0%,#fcf7f8a8 100%);
+    color: rgb(255, 255, 255);
+}
+
+.button3:hover {
+    background-image: linear-gradient(163deg, #a00000fa 0%, #d10050 100%);
+    color: rgb(255, 255, 255);
+}
+
+.card {
+    width: 650px;
+    margin-left: 600px;
+    background-image: linear-gradient(163deg, #000000 0%,#fcf7f8a8 100%);
+    border-radius: 22px;
+    transition: all .3s;
+    margin-top: 150px;
+    height: 800px;
+}
+
+.card2 {
+    border-radius: 0;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
+}
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcf7f8a8;
+}
